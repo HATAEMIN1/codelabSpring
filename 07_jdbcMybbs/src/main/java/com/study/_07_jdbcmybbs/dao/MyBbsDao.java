@@ -22,7 +22,7 @@ public class MyBbsDao implements IMyBbsDao{
     }
 
     @Override
-    public MyBbsDto viewDao(int id) {
+    public MyBbsDto viewDao(String id) {
         String query = "select * from mybbs1 where id ="+id;
         MyBbsDto dto = jdbcTemplate.queryForObject(query, new BeanPropertyRowMapper<>(MyBbsDto.class));
         return dto;
@@ -30,11 +30,13 @@ public class MyBbsDao implements IMyBbsDao{
 
     @Override
     public int writeDao(String writer, String title, String content) {
-        return 0;
+        String query = "insert into mybbs1 (writer,title,content) values(?,?,?)";
+        return jdbcTemplate.update(query, writer, title, content);
     }
 
     @Override
-    public int deleteDao(int id) {
-        return 0;
+    public int deleteDao(String id) {
+        String query = "delete from mybbs1 where id = ?";
+        return jdbcTemplate.update(query,Integer.parseInt(id));
     }
 }

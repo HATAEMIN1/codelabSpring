@@ -7,9 +7,9 @@ import java.util.List;
 public interface IMyBbsDao {
     public List<MyBbsDto> listDao();
 
-    public MyBbsDto viewDao(int id);
+    public MyBbsDto viewDao(String id);
 
     public int writeDao(String writer, String title, String content);
 
-    public int deleteDao(int id);
+    public int deleteDao(String id);
 }

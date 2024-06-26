@@ -1,6 +1,6 @@
-package com.study._07_jdbcmybbs;
+package com.study.spring;
 
-import com.study._07_jdbcmybbs.dao.IMyBbsDao;
+import com.study.spring.dao.IMyBbsDao;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

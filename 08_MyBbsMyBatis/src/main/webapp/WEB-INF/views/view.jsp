@@ -12,9 +12,11 @@
     <title>Title</title>
 </head>
 <body>
-<h2>뇽안</h2>
-<c:forEach var="dto" items="${lists}">
-    <div>${dto.id}/${dto.writer}/<a href="/view?id=${dto.id}">${dto.title}</a>/${dto.content}</div>
-</c:forEach>
+<h2>mybbs 내용보기</h2>
+    작성자: ${dto.writer} <br>
+    제목: ${dto.title} <br>
+    내용: ${dto.content} <br>
+<a href="./list">목록</a>
+
 </body>
 </html>
