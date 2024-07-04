@@ -1,4 +1,4 @@
-nmae: Deploy EC2
+name: Deploy EC2
 on:
   push:
     branch:
