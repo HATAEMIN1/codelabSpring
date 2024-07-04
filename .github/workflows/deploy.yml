@@ -23,5 +23,4 @@ jobs:
             sudo fuser -k -n tcp 8080 
             # nohup java -jar build/libs/*SNAPSHOT.war & cd
             nohup java -jar build/libs/*SNAPSHOT.war > /dev/null 2>&1 &
-            sudo lsof -i:8080
-~                                        
+            sudo lsof -i:8080                                    
