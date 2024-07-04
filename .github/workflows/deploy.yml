@@ -16,7 +16,7 @@ jobs:
           username: ${{ secrets.USERNAME }} # EC2 접속 username
           key: ${{ secrets.PASSWORD }}
           script: |
-            cd /home/codelabSpring
+            cd /home/codelabSpring/12_jpa_crud
             git config --global --add safe.directory /home/codelabSpring/12_jpa_crud
             sudo git pull origin main
             sudo ./gradlew clean build
