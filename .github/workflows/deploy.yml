@@ -72,7 +72,7 @@ jobs:
           key: ${{ secrets.PASSWORD }}
           script: |
             cd /home/ubuntu/myproject/tobe
-            ls -al 12_jpa_crud/src/main/resources
+            ls -al 12_jpa_crud
             rm -rf /home/ubuntu/myproject/current
             mkdir /home/ubuntu/myproject/current
             mv /home/ubuntu/myproject/tobe/12_jpa_crud/project.war /home/ubuntu/myproject/current/project.war
