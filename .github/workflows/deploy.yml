@@ -27,7 +27,7 @@ jobs:
 
       - name: application.yml 파일 만들기
         run: |
-          mkdir -p /home/codelabSpring/12_jpa_crud/src/main/resources/
+          mkdir -p ./src/main/resources/
           echo "${{ secrets.APPLICATION_PROPERTIES }}" > /home/codelabSpring/12_jpa_crud/src/main/resources/application.yml ####야물파일생성
 
       - name: application.yml 파일 생성 확인
