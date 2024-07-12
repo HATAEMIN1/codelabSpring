@@ -35,7 +35,7 @@ jobs:
           echo "Current directory after creating application.yml:"
           pwd
           echo "Files in src/main/resources after creating application.yml:"
-          ls -al 12_jpa_crudsrc/main/resources
+          ls -al /12_jpa_crudsrc/main/resources
 
       - name: gradlew 파일에 실행 권한 부여
         run: chmod +x ./gradlew
