@@ -59,9 +59,8 @@ jobs:
           host: ${{ secrets.HOST }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.PASSWORD }}
-          source: project.war
+          source: 12_jpa_crud/project.war
           target: /home/ubuntu/myproject/tobe
-          working-directory: 12_jpa_crud
 
       - name: SSH로 EC2에 접속하기
         uses: appleboy/ssh-action@v1.0.3
