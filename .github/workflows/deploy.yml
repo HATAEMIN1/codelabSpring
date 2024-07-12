@@ -77,4 +77,4 @@ jobs:
             cd /home/ubuntu/myproject/current
             sudo fuser -k -n tcp 8080
             sudo nohup java -jar project.war > /dev/null 2>&1 &
-            rm -rf /home/codelabSpring/12_jpa_crud
+            sudo rm -rf /home/codelabSpring/12_jpa_crud
