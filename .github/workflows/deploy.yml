@@ -27,15 +27,15 @@ jobs:
 
       - name: application.yml 파일 만들기
         run: |
-          mkdir -p ./src/main/resources/
-          echo "${{ secrets.APPLICATION_PROPERTIES }}" > ./src/main/resources/application.yml 
+          mkdir -p ./12_jpa_crud/src/main/resources/
+          echo "${{ secrets.APPLICATION_PROPERTIES }}" > ./12_jpa_crud/src/main/resources/application.yml 
 
       - name: application.yml 파일 생성 확인
         run: |
           echo "Current directory after creating application.yml:"
           pwd
           echo "Files in src/main/resources after creating application.yml:"
-          ls -al ./src/main/resources/
+          ls -al ./12_jpa_crud/src/main/resources/
 
       - name: gradlew 파일에 실행 권한 부여
         run: chmod +x ./gradlew
