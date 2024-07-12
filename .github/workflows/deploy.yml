@@ -73,8 +73,8 @@ jobs:
             ls -al
             rm -rf /home/ubuntu/myproject/current
             mkdir /home/ubuntu/myproject/current
-            sudo mv /home/ubuntu/myproject/tobe/12_jpa_crud/project.war /home/ubuntu/myproject/current/project.war
+            mv /home/ubuntu/myproject/tobe/12_jpa_crud/project.war /home/ubuntu/myproject/current/project.war
             cd /home/ubuntu/myproject/current
             sudo fuser -k -n tcp 8080
             sudo nohup java -jar project.war > /dev/null 2>&1 &
-            sudo rm -rf /home/ubuntu/myproject/tobe
+            rm -rf /home/ubuntu/myproject/tobe
